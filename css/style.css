@@ -90,7 +90,7 @@ html, body {
   border-color: var(--border);
 }
 
-#fullscreen-btn {
+#fullscreen-btn, .icon-btn {
   background: transparent;
   color: var(--text-dim);
   border: 1px solid transparent;
@@ -100,7 +100,7 @@ html, body {
   font-size: 15px;
   margin-left: 6px;
 }
-#fullscreen-btn:hover { color: var(--accent); border-color: var(--border); }
+#fullscreen-btn:hover, .icon-btn:hover { color: var(--accent); border-color: var(--border); }
 #fullscreen-btn.active { background: var(--bg-panel-alt); color: var(--accent); border-color: var(--border); }
 
 #app {

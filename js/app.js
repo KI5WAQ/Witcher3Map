@@ -108,6 +108,9 @@ const els = {
   imageModalClose: document.getElementById("image-modal-close"),
   buildSelect: document.getElementById("build-select"),
   buildContent: document.getElementById("build-content"),
+  backupBtn: document.getElementById("backup-btn"),
+  restoreBtn: document.getElementById("restore-btn"),
+  restoreFileInput: document.getElementById("restore-file-input"),
 };
 
 init();
@@ -131,6 +134,7 @@ async function init() {
   wireSearch();
   wireNotesButton();
   wireFullscreenToggle();
+  wireBackupRestore();
   wireImageModal();
 
   await loadSpriteSize();
@@ -938,6 +942,85 @@ function setMapFullscreen(on) {
   // The map container's size just changed; Leaflet needs to recompute it
   // after the browser has applied the layout change.
   requestAnimationFrame(() => state.map && state.map.invalidateSize());
+}
+
+// ---------- Backup / restore ----------
+// Everything this app persists lives in localStorage under the "w3map:"
+// prefix. Rather than hardcoding each key pattern (marker completion, notes,
+// legend settings, grandmaster/build progress, ...), we just export/import
+// every key with that prefix, so this stays correct as new features add
+// their own keys.
+
+function wireBackupRestore() {
+  els.backupBtn.addEventListener("click", downloadBackup);
+  els.restoreBtn.addEventListener("click", () => els.restoreFileInput.click());
+  els.restoreFileInput.addEventListener("change", handleRestoreFile);
+}
+
+function downloadBackup() {
+  const data = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (!key.startsWith("w3map:")) continue;
+    try {
+      data[key] = JSON.parse(localStorage.getItem(key));
+    } catch (e) {
+      data[key] = localStorage.getItem(key);
+    }
+  }
+
+  const payload = {
+    app: "witcher3map-local-backup",
+    exportedAt: new Date().toISOString(),
+    data,
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `witcher3map-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function handleRestoreFile(e) {
+  const file = e.target.files[0];
+  e.target.value = ""; // allow re-selecting the same file later
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    let payload;
+    try {
+      payload = JSON.parse(reader.result);
+    } catch (err) {
+      alert("That file isn't valid JSON. Restore cancelled.");
+      return;
+    }
+
+    const data = payload && payload.data;
+    const keys = data && typeof data === "object" ? Object.keys(data).filter((k) => k.startsWith("w3map:")) : [];
+    if (!keys.length) {
+      alert("That doesn't look like a Witcher 3 Map backup file. Restore cancelled.");
+      return;
+    }
+
+    const ok = confirm(
+      `Restore ${keys.length} saved item(s) from this backup?\n\n` +
+        "This will overwrite your current notes, completion progress, and settings with what's in the file."
+    );
+    if (!ok) return;
+
+    for (const key of keys) {
+      localStorage.setItem(key, JSON.stringify(data[key]));
+    }
+    alert("Backup restored. Reloading now.");
+    location.reload();
+  };
+  reader.onerror = () => alert("Couldn't read that file. Restore cancelled.");
+  reader.readAsText(file);
 }
 
 // ---------- Image lightbox ----------

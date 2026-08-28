@@ -35,6 +35,10 @@ Then open http://127.0.0.1:8123/ in a browser.
   on a different scraped region
 - **Fullscreen mode** — the ⛶ button hides the sidebar and requests native
   browser fullscreen so the map fills the screen; Esc exits
+- **Backup / Restore** (💾 / 📂 in the topbar) — since all progress lives in
+  browser `localStorage`, 💾 downloads everything (completion, notes, legend
+  settings) as a JSON file, and 📂 restores it from that file — useful before
+  clearing browser data or switching machines
 - **Grandmaster Gear tab** — a component checklist for each Blood and Wine
   Grandmaster armor set (Manticore, Griffin, Wolf, Cat, Bear), transcribed
   from a user-supplied crafting guide, plus reference images for the
