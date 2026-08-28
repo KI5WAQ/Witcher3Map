@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Witcher 3 Interactive Map (Local)</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="topbar">
+  <div id="topbar-left">
+    <img id="title-logo" src="assets/images/Title.webp" alt="Witcher 3 Map">
+    <select id="map-select"></select>
+  </div>
+  <div id="topbar-center">
+    <input type="text" id="search-box" placeholder="Search markers...">
+  </div>
+  <div id="topbar-right">
+    <button class="tab-btn active" data-tab="legend">Legend</button>
+    <button class="tab-btn" data-tab="checklist">Checklist</button>
+    <button class="tab-btn" data-tab="notes">Notes</button>
+    <button class="tab-btn" data-tab="grandmaster">Grandmaster Gear</button>
+    <button class="tab-btn" data-tab="builds">Builds</button>
+    <button id="fullscreen-btn" title="Toggle fullscreen map">&#9974;</button>
+  </div>
+</header>
+
+<div id="app">
+  <aside id="sidebar">
+    <div id="panel-legend" class="panel active">
+      <div class="panel-header">
+        <span id="legend-progress"></span>
+        <button id="legend-toggle-all" class="link-btn">Toggle all</button>
+      </div>
+      <div id="legend-tree"></div>
+    </div>
+
+    <div id="panel-checklist" class="panel">
+      <div class="panel-header">
+        <span id="checklist-progress"></span>
+        <button id="checklist-reset" class="link-btn">Reset all</button>
+      </div>
+      <div id="checklist-tree"></div>
+    </div>
+
+    <div id="panel-notes" class="panel">
+      <div class="panel-header">
+        <span>Your notes</span>
+        <button id="notes-add-btn" class="link-btn">+ Add note</button>
+      </div>
+      <p id="notes-hint" class="hint">Click "+ Add note", then click a spot on the map to drop a pin and write a note.</p>
+      <div id="notes-list"></div>
+    </div>
+
+    <div id="panel-grandmaster" class="panel">
+      <div class="panel-header">
+        <span id="grandmaster-progress"></span>
+        <button id="grandmaster-reset" class="link-btn">Reset all</button>
+      </div>
+      <p id="grandmaster-unlock-note" class="hint"></p>
+      <p class="hint">Hover a material for where/how to get it.</p>
+      <div id="grandmaster-sets"></div>
+      <div id="grandmaster-references">
+        <div class="panel-subheader">Crafting chain reference</div>
+        <p class="hint">How to craft Enriched Dimeritium and Infused Slyzard Hide from base materials, straight from the source guide.</p>
+        <div id="grandmaster-reference-images"></div>
+      </div>
+    </div>
+
+    <div id="panel-builds" class="panel">
+      <div class="panel-header">
+        <select id="build-select"></select>
+      </div>
+      <div id="build-content"></div>
+    </div>
+  </aside>
+
+  <main id="map"></main>
+</div>
+
+<div id="image-modal" class="image-modal-overlay hidden">
+  <button id="image-modal-close" title="Close">&times;</button>
+  <img id="image-modal-img" alt="">
+</div>
+
+<div id="material-tooltip" class="material-tooltip hidden"></div>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "mapSlug": "fablesphere",
+    "mapName": "Fablesphere",
+    "objectName": "The Witcher 3",
+    "mapId": 48
+  },
+  {
+    "mapSlug": "isle-of-mists",
+    "mapName": "Isle of Mists",
+    "objectName": "The Witcher 3",
+    "mapId": 49
+  },
+  {
+    "mapSlug": "kaer-morhen",
+    "mapName": "Kaer Morhen",
+    "objectName": "The Witcher 3",
+    "mapId": 46
+  },
+  {
+    "mapSlug": "realm-of-rumination",
+    "mapName": "Realm of Rumination",
+    "objectName": "The Witcher 3",
+    "mapId": 894
+  },
+  {
+    "mapSlug": "vizima-palace",
+    "mapName": "Royal Palace in Vizima",
+    "objectName": "The Witcher 3",
+    "mapId": 50
+  },
+  {
+    "mapSlug": "skellige-isles",
+    "mapName": "Skellige Isles",
+    "objectName": "The Witcher 3",
+    "mapId": 45
+  },
+  {
+    "mapSlug": "time-and-space",
+    "mapName": "Time and Space",
+    "objectName": "The Witcher 3",
+    "mapId": 895
+  },
+  {
+    "mapSlug": "toussaint",
+    "mapName": "Toussaint",
+    "objectName": "The Witcher 3",
+    "mapId": 47
+  },
+  {
+    "mapSlug": "velen-novigrad",
+    "mapName": "Velen & Novigrad",
+    "objectName": "The Witcher 3",
+    "mapId": 44
+  },
+  {
+    "mapSlug": "white-orchard",
+    "mapName": "White Orchard",
+    "objectName": "The Witcher 3",
+    "mapId": 43
+  }
+]

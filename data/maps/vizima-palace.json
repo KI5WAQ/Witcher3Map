@@ -1,0 +1,336 @@
+{
+  "objectSlug": "the-witcher-3-wild-hunt",
+  "objectName": "The Witcher 3",
+  "mapSlug": "vizima-palace",
+  "mapName": "Royal Palace in Vizima",
+  "mapId": 50,
+  "sourceUrl": "https://www.ign.com/maps/the-witcher-3-wild-hunt/vizima-palace",
+  "tileUrlTemplate": "https://tiles.mapgenie.io/games/witcher-3/vizima-palace/default-v6/{z}/{y}/{x}.jpg",
+  "minZoom": 8,
+  "maxZoom": 11,
+  "initialLat": 83.90524,
+  "initialLng": -168.14908,
+  "initialZoom": 11,
+  "markerSpriteUrl": "https://cdn.mapgenie.io/images/games/witcher-3/markers@2x.png?v=3",
+  "types": [
+    {
+      "typeSlug": "130",
+      "name": "Locations",
+      "parentTypeSlug": null,
+      "markerCount": null,
+      "icon": null
+    },
+    {
+      "typeSlug": "608",
+      "name": "Point of Interest",
+      "parentTypeSlug": "130",
+      "markerCount": 1,
+      "icon": {
+        "offsetX": 231,
+        "offsetY": 44,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "610",
+      "name": "Signpost",
+      "parentTypeSlug": "130",
+      "markerCount": 1,
+      "icon": {
+        "offsetX": 66,
+        "offsetY": 88,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "132",
+      "name": "Quests",
+      "parentTypeSlug": null,
+      "markerCount": null,
+      "icon": null
+    },
+    {
+      "typeSlug": "632",
+      "name": "Main Quest",
+      "parentTypeSlug": "132",
+      "markerCount": 2,
+      "icon": {
+        "offsetX": 66,
+        "offsetY": 220,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "133",
+      "name": "Items",
+      "parentTypeSlug": null,
+      "markerCount": null,
+      "icon": null
+    },
+    {
+      "typeSlug": "642",
+      "name": "Book",
+      "parentTypeSlug": "133",
+      "markerCount": 3,
+      "icon": {
+        "offsetX": 165,
+        "offsetY": 220,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "639",
+      "name": "Chest",
+      "parentTypeSlug": "133",
+      "markerCount": 4,
+      "icon": {
+        "offsetX": 198,
+        "offsetY": 220,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "641",
+      "name": "Gwent Card",
+      "parentTypeSlug": "133",
+      "markerCount": 1,
+      "icon": {
+        "offsetX": 231,
+        "offsetY": 220,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    },
+    {
+      "typeSlug": "134",
+      "name": "Other",
+      "parentTypeSlug": null,
+      "markerCount": null,
+      "icon": null
+    },
+    {
+      "typeSlug": "647",
+      "name": "Miscellaneous",
+      "parentTypeSlug": "134",
+      "markerCount": 1,
+      "icon": {
+        "offsetX": 231,
+        "offsetY": 264,
+        "width": 33,
+        "height": 44,
+        "anchorX": 16.5,
+        "anchorY": 44
+      }
+    }
+  ],
+  "markers": [
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555285:608",
+      "name": "Drawing of Ciri",
+      "slug": "555285",
+      "typeSlug": "608",
+      "iconSlug": "point_of_interest",
+      "lat": 83.91051,
+      "lng": -168.18028,
+      "wikiPage": null,
+      "checklistTaskId": 65193767,
+      "mapgenieId": 555285,
+      "regionId": null,
+      "description": "Scar's healed nicely.",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555245:610",
+      "name": "Royal Palace in Vizima",
+      "slug": "555245",
+      "typeSlug": "610",
+      "iconSlug": "signpost",
+      "lat": 83.89566,
+      "lng": -168.00377,
+      "wikiPage": null,
+      "checklistTaskId": 65193700,
+      "mapgenieId": 555245,
+      "regionId": null,
+      "description": "Unlocked as a fast travel point upon completion of Imperial Audience.",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555352:632",
+      "name": "Imperial Audience",
+      "slug": "555352",
+      "typeSlug": "632",
+      "iconSlug": "main_quest",
+      "lat": 83.92143,
+      "lng": -168.06018,
+      "wikiPage": "Imperial_Audience",
+      "checklistTaskId": 65193903,
+      "mapgenieId": 555352,
+      "regionId": null,
+      "description": "Next | Previous Level: 2 _Geralt had spent years looking for Yennefer, only to have her find him. She had appeared outside the tavern in White Orchard, escorted by Nilfgaardian soldiers. The one-time lovers could not enjoy their reunion, for the sorceress had insisted they make haste._ Rewards: - None",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555353:632",
+      "name": "The Nilfgaardian Connection",
+      "slug": "555353",
+      "typeSlug": "632",
+      "iconSlug": "main_quest",
+      "lat": 83.89683,
+      "lng": -168.1586,
+      "wikiPage": "The_Nilfgaard_Connection",
+      "checklistTaskId": 65193904,
+      "mapgenieId": 555353,
+      "regionId": null,
+      "description": "Next | Previous Level: 5 _Geralt traveled to Velen in search of Ciri, an act that attested to the depth of his devotion. Only a man who has been to this land can know just how vile it is. At this time it was commonly known as No Man's Land. Why? Well, the emperor of Nilfgaard had not yet claimed it, Temeria was in disarray, and the Redanians had already retreated north. No Man had been left in charge, and he had proved a terrible ruler._ Rewards: - 100 XP",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555279:642",
+      "name": "Old Letter",
+      "slug": "555279",
+      "typeSlug": "642",
+      "iconSlug": "book",
+      "lat": 83.90802,
+      "lng": -168.0529,
+      "wikiPage": null,
+      "checklistTaskId": 65193768,
+      "mapgenieId": 555279,
+      "regionId": null,
+      "description": "Inside the Chest found in a secret passage unlocked via Hidden Switch.",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555283:642",
+      "name": "Letter found in Yennefer's chest",
+      "slug": "555283",
+      "typeSlug": "642",
+      "iconSlug": "book",
+      "lat": 83.90853,
+      "lng": -168.22014,
+      "wikiPage": null,
+      "checklistTaskId": 65193769,
+      "mapgenieId": 555283,
+      "regionId": null,
+      "description": "Inside the Chest which, as you might have guessed, belongs to Yennefer.",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555284:642",
+      "name": "Letter to Yennefer",
+      "slug": "555284",
+      "typeSlug": "642",
+      "iconSlug": "book",
+      "lat": 83.90977,
+      "lng": -168.18037,
+      "wikiPage": null,
+      "checklistTaskId": 65193770,
+      "mapgenieId": 555284,
+      "regionId": null,
+      "description": null,
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555278:639",
+      "name": "Chest",
+      "slug": "555278",
+      "typeSlug": "639",
+      "iconSlug": "chest",
+      "lat": 83.908,
+      "lng": -168.0565,
+      "wikiPage": null,
+      "checklistTaskId": 65193771
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555280:639",
+      "name": "Chest",
+      "slug": "555280",
+      "typeSlug": "639",
+      "iconSlug": "chest",
+      "lat": 83.92314,
+      "lng": -168.04726,
+      "wikiPage": null,
+      "checklistTaskId": 65193772,
+      "mapgenieId": 555280,
+      "regionId": null,
+      "description": null,
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555281:639",
+      "name": "Chest",
+      "slug": "555281",
+      "typeSlug": "639",
+      "iconSlug": "chest",
+      "lat": 83.90852,
+      "lng": -168.21689,
+      "wikiPage": null,
+      "checklistTaskId": 65193773,
+      "mapgenieId": 555281,
+      "regionId": null,
+      "description": "On the left. Contains the Letter found in Yennefer's chest, Nine-Tailed Vixen swords, and White Tiger armor set - all very good in the early game!",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555282:639",
+      "name": "Diagram Chest",
+      "slug": "555282",
+      "typeSlug": "639",
+      "iconSlug": "chest",
+      "lat": 83.90904,
+      "lng": -168.21689,
+      "wikiPage": null,
+      "checklistTaskId": 65193774,
+      "mapgenieId": 555282,
+      "regionId": null,
+      "description": "On the right.",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555246:641",
+      "name": "Foltest: The Siegemaster",
+      "slug": "555246",
+      "typeSlug": "641",
+      "iconSlug": "gwent_card",
+      "lat": 83.89959,
+      "lng": -168.07469,
+      "wikiPage": null,
+      "checklistTaskId": 65193701,
+      "mapgenieId": 555246,
+      "regionId": null,
+      "description": "Reward for defeating the Nilfgaardian Nobleman in a game of Gwent. *Opponent Information:* Deck: Nilfgaardian Empire Leader Card: Emperor of Nilfgaard - Look at 3 random cards from your opponent's hand. *Card Information:* Deck: Northern Realms Row: Leader Strength: N/A Special Ability: Doubles the strength of all your Siege units (unless a Commander's Horn is also present on that row).",
+      "link": null
+    },
+    {
+      "id": "the-witcher-3-wild-hunt:vizima-palace:555277:647",
+      "name": "Hidden Switch",
+      "slug": "555277",
+      "typeSlug": "647",
+      "iconSlug": "miscellaneous",
+      "lat": 83.90321,
+      "lng": -168.05376,
+      "wikiPage": null,
+      "checklistTaskId": 65193775,
+      "mapgenieId": 555277,
+      "regionId": null,
+      "description": "Unlocks a secret passage leading to a Chest.",
+      "link": null
+    }
+  ]
+}

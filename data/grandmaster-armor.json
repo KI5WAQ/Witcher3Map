@@ -1,0 +1,134 @@
+{
+  "sourceNote": "Transcribed from a 3-page \"Grandmaster Armor Crafting Materials Guide\" PDF (by u/ryotoyokoyama) the user provided.",
+  "unlockNote": "To craft any Grandmaster set, first find Lafargue, the Grandmaster Armorer in Toussaint (between The Gran Place and Metinna Gate). Asking about his work starts the quest \"Master Master Master!\", which unlocks a Scavenger Hunt for each set's diagrams.",
+  "materialInfo": {
+    "Shirt": "A basic clothing item — sold cheaply by almost any general goods merchant or tailor, or picked up as everyday loot.",
+    "Infused Slyzard Hide": "Craft-only — cannot be bought or looted. A Blacksmith/Armorer makes it from Cured Draconid Leather + Infused Crystal (see the crafting chain reference below).",
+    "Enriched Dimeritium Plates": "Crafted by a Blacksmith/Armorer from 2x Enriched Dimeritium Ingot (see crafting chain below), occasionally found as loot, or bought outright from select merchants for ~4,500 crowns.",
+    "Enriched Dimeritium Ingot": "Crafted by a Blacksmith/Armorer from 2x Enriched Dimeritium (see crafting chain below), occasionally found as loot, or bought from select merchants.",
+    "Powdered Monster Tissue": "Looted from monsters, or obtained by dismantling Gargoyle Dust, Gargoyle Heart, Griffin Feathers, Shaelmaar Dust, or Specter Dust. Cannot be crafted or purchased.",
+    "Monster Essence": "Looted from Golems, or by dismantling essence-type drops like Barghest Essence, Elemental Essence, Endrega Embryo, or Golem's Heart. Cannot be crafted or purchased.",
+    "Leather Scraps": "Very common loot; craftable from 4x Leather Straps; also sold cheaply by merchants like Willis in White Orchard or the Nilfgaardian Garrison Quartermaster.",
+    "Monster Blood": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Hair": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Saliva": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Brain": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Heart": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Bone": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Claw": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Stomach": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Liver": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Tongue": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Monster Tooth": "Dropped by looting monsters after combat — the source varies by fight. Occasionally obtainable by dismantling related trophies at a Blacksmith/Armorer.",
+    "Ruby": "Random loot, dismantling a Flawless Ruby, or bought from merchants for ~876 crowns. Cannot be crafted.",
+    "Sapphire": "Random loot, dismantling a Flawless Sapphire, or bought from gem-selling merchants. Cannot be crafted.",
+    "Mastercrafted Griffin armor, trousers, boots, gauntlets, Silver and Steel swords": "The top base-game tier of Griffin gear — needed in your inventory before crafting the Grandmaster upgrade. Diagrams come from \"Scavenger Hunt: Griffin School Gear\", starting in Velen (buy the starting map from the Armorer in Midcopse, or in Hierarch Square, Novigrad).",
+    "Mastercrafted Feline armor, trousers, boots, gauntlets, Silver and Steel swords": "The top base-game tier of Cat gear. Diagrams come from \"Scavenger Hunt: Cat School Gear\", centered on Velen and Skellige near Temple Isle (starting maps sold in Blackbough, Crow's Perch, or Lindenvale).",
+    "Mastercrafted Ursine armor, trousers, boots, gauntlets, Silver and Steel swords": "The top base-game tier of Bear gear. Diagrams come from \"Scavenger Hunt: Bear School Gear\", based in Skellige (An Skellig and Ard Skellig)."
+  },
+  "sets": [
+    {
+      "slug": "manticore",
+      "name": "Manticore School",
+      "components": [
+        { "name": "Shirt", "qty": 1 },
+        { "name": "Infused Slyzard Hide", "qty": 6 },
+        { "name": "Enriched Dimeritium Plates", "qty": 4 },
+        { "name": "Enriched Dimeritium Ingot", "qty": 5 },
+        { "name": "Powdered Monster Tissue", "qty": 6 },
+        { "name": "Monster Essence", "qty": 1 },
+        { "name": "Leather Scraps", "qty": 4 },
+        { "name": "Monster Blood", "qty": 1 },
+        { "name": "Monster Hair", "qty": 1 },
+        { "name": "Monster Saliva", "qty": 1 },
+        { "name": "Monster Brain", "qty": 2 },
+        { "name": "Monster Heart", "qty": 1 },
+        { "name": "Monster Bone", "qty": 6 }
+      ]
+    },
+    {
+      "slug": "griffin",
+      "name": "Griffin School",
+      "components": [
+        { "name": "Mastercrafted Griffin armor, trousers, boots, gauntlets, Silver and Steel swords", "qty": 1 },
+        { "name": "Infused Slyzard Hide", "qty": 5 },
+        { "name": "Enriched Dimeritium Plates", "qty": 4 },
+        { "name": "Enriched Dimeritium Ingot", "qty": 5 },
+        { "name": "Powdered Monster Tissue", "qty": 2 },
+        { "name": "Monster Essence", "qty": 3 },
+        { "name": "Monster Blood", "qty": 4 },
+        { "name": "Monster Claw", "qty": 4 },
+        { "name": "Monster Brain", "qty": 2 },
+        { "name": "Monster Heart", "qty": 5 },
+        { "name": "Leather Scraps", "qty": 4 }
+      ]
+    },
+    {
+      "slug": "wolf",
+      "name": "Wolf School",
+      "components": [
+        { "name": "Infused Slyzard Hide", "qty": 5 },
+        { "name": "Enriched Dimeritium Plates", "qty": 4 },
+        { "name": "Enriched Dimeritium Ingot", "qty": 5 },
+        { "name": "Powdered Monster Tissue", "qty": 3 },
+        { "name": "Monster Essence", "qty": 1 },
+        { "name": "Monster Blood", "qty": 6 },
+        { "name": "Monster Stomach", "qty": 1 },
+        { "name": "Monster Heart", "qty": 6 },
+        { "name": "Leather Scraps", "qty": 4 },
+        { "name": "Ruby", "qty": 2 }
+      ]
+    },
+    {
+      "slug": "cat",
+      "name": "Cat School",
+      "components": [
+        { "name": "Mastercrafted Feline armor, trousers, boots, gauntlets, Silver and Steel swords", "qty": 1 },
+        { "name": "Infused Slyzard Hide", "qty": 5 },
+        { "name": "Enriched Dimeritium Plates", "qty": 4 },
+        { "name": "Enriched Dimeritium Ingot", "qty": 5 },
+        { "name": "Powdered Monster Tissue", "qty": 1 },
+        { "name": "Monster Liver", "qty": 2 },
+        { "name": "Monster Heart", "qty": 2 },
+        { "name": "Monster Bone", "qty": 4 },
+        { "name": "Monster Claw", "qty": 4 },
+        { "name": "Monster Blood", "qty": 3 },
+        { "name": "Monster Tongue", "qty": 2 },
+        { "name": "Monster Tooth", "qty": 1 },
+        { "name": "Leather Scraps", "qty": 4 },
+        { "name": "Sapphire", "qty": 2 }
+      ]
+    },
+    {
+      "slug": "bear",
+      "name": "Bear School",
+      "components": [
+        { "name": "Mastercrafted Ursine armor, trousers, boots, gauntlets, Silver and Steel swords", "qty": 1 },
+        { "name": "Infused Slyzard Hide", "qty": 5 },
+        { "name": "Enriched Dimeritium Plates", "qty": 4 },
+        { "name": "Enriched Dimeritium Ingot", "qty": 5 },
+        { "name": "Powdered Monster Tissue", "qty": 1 },
+        { "name": "Monster Essence", "qty": 3 },
+        { "name": "Monster Heart", "qty": 1 },
+        { "name": "Monster Saliva", "qty": 4 },
+        { "name": "Monster Tooth", "qty": 3 },
+        { "name": "Monster Claw", "qty": 2 },
+        { "name": "Monster Hair", "qty": 2 },
+        { "name": "Monster Tongue", "qty": 1 },
+        { "name": "Monster Blood", "qty": 1 },
+        { "name": "Monster Brain", "qty": 1 },
+        { "name": "Leather Scraps", "qty": 4 }
+      ]
+    }
+  ],
+  "craftingChainReferences": [
+    {
+      "title": "Enriched Dimeritium (Ore / Ingot / Plate) chain",
+      "image": "assets/images/grandmaster-crafting-chain-1.jpg"
+    },
+    {
+      "title": "Infused Slyzard Hide chain",
+      "image": "assets/images/grandmaster-crafting-chain-2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "builds": [
+    {
+      "slug": "euphoria-alchemy",
+      "name": "Euphoria Alchemy",
+      "role": "Alchemy / Toxicity hybrid",
+      "iconBase": "assets/images/builds/",
+      "skillTreeImage": "assets/images/Witcher-3-Euphoria-build.webp",
+      "mutation": {
+        "name": "Euphoria",
+        "icon": "mutation-euphoria.png",
+        "description": "Increases sword damage and Sign intensity by 0.75% for each point of Toxicity."
+      },
+      "toxicityStrategy": "The Toxicity Threshold: your safety threshold is now 80% (down from 95%+). Exceeding 80% causes your health to drain. You will intentionally sit exactly at or just over 80% to maximize the Euphoria buff while counteracting the health drain using health-regen decoctions.",
+      "slotNote": "16 skill slots total. To unlock all four central mutation slots, research at least 8 mutations in the expansion tree.",
+      "skillTrees": [
+        {
+          "name": "Alchemy",
+          "color": "green",
+          "slotCount": 6,
+          "skills": [
+            { "name": "Acquired Tolerance", "icon": "skill-acquired-tolerance.png", "rank": "3/3", "description": "Grants essential maximum toxicity based on known recipes." },
+            { "name": "Synergy", "icon": "skill-synergy.png", "rank": "3/3", "description": "Increases the bonus of equipped mutagens in your character panel by 50%." },
+            { "name": "Killing Spree", "icon": "skill-killing-spree.png", "rank": "3/3", "description": "Boosts critical hit chance by 30% per killed enemy during a fight." },
+            { "name": "Hunter Instinct", "icon": "skill-hunter-instinct.png", "rank": "3/3", "description": "Boosts critical hit damage by 100% when adrenaline is fully maxed." },
+            { "name": "Protective Coating", "icon": "skill-protective-coating.png", "rank": "3/3", "description": "Adds 15% damage resistance against the targeted monster type when the correct oil is applied." },
+            { "name": "Fixative", "icon": "skill-fixative.png", "rank": "3/3", "description": "Blade oils never wear off and you can stack up to three oils simultaneously on a single blade." }
+          ]
+        },
+        {
+          "name": "Combat",
+          "color": "red",
+          "slotCount": 8,
+          "skills": [
+            { "name": "Muscle Memory", "icon": "skill-muscle-memory.png", "rank": "3/3", "description": "Maximizes fast attack damage." },
+            { "name": "Precise Blows", "icon": "skill-precise-blows.png", "rank": "3/3", "description": "Maximizes fast attack critical hit chance/damage." },
+            { "name": "Strength Training", "icon": "skill-strength-training.png", "rank": "3/3", "description": "Maximizes strong attack damage." },
+            { "name": "Crushing Blows", "icon": "skill-crushing-blows.png", "rank": "3/3", "description": "Maximizes strong attack critical hit chance/damage." },
+            { "name": "Whirl", "icon": "skill-whirl.png", "rank": "3/3", "description": "Continuous multi-target fast attack." },
+            { "name": "Rend", "icon": "skill-rend.png", "rank": "3/3", "description": "High-damage strong attack that bypasses enemy shields." },
+            { "name": "Razor Focus", "icon": "skill-razor-focus.png", "rank": "3/3", "description": "Instantly builds 1 Adrenaline Point when entering combat." },
+            { "name": "Resolve", "icon": "skill-resolve.png", "rank": "3/3", "description": "Prevents losing Adrenaline Points when taking damage." }
+          ]
+        },
+        {
+          "name": "General",
+          "color": "brown",
+          "slotCount": 2,
+          "skills": [
+            { "name": "Metabolic Control", "icon": "skill-metabolic-control.png", "rank": "1/1", "description": "Crucial +30 to max toxicity to offset patch balance changes." },
+            { "name": "Cat School Techniques", "icon": "skill-cat-school-techniques.png", "rank": "1/1", "description": "Grants 25% critical hit damage and 5% fast attack damage per piece of Light armor." }
+          ]
+        }
+      ],
+      "mutagens": "Equip 4 Greater Red Mutagens to get the massive damage multipliers boosted by Synergy.",
+      "gear": [
+        { "slot": "Armor", "name": "Grandmaster Manticore Armor (Chest, Gauntlets, Trousers, Boots)", "icon": "gear-manticore-armor.png", "description": "The set bonuses increase maximum toxicity limits and give your bombs critical hit properties." },
+        { "slot": "Gauntlets", "name": "Grandmaster Manticore Gauntlets", "icon": "gear-manticore-gauntlets.png", "description": "Part of the Grandmaster Manticore set." },
+        { "slot": "Trousers", "name": "Grandmaster Manticore Trousers", "icon": "gear-manticore-trousers.png", "description": "Part of the Grandmaster Manticore set." },
+        { "slot": "Boots", "name": "Grandmaster Manticore Boots", "icon": "gear-manticore-boots.png", "description": "Part of the Grandmaster Manticore set." },
+        { "slot": "Steel Sword", "name": "Toussaint Knight's Steel Sword", "icon": "gear-toussaint-knights-steel-sword.png", "description": "Crafted version from Blood & Wine, for its unmatched armor piercing and critical hit stats." },
+        { "slot": "Silver Sword", "name": "Aerondight", "icon": "gear-aerondight.png", "description": "Charges up damage with consecutive hits, guaranteeing critical hits at max stacks." }
+      ],
+      "enchantments": [
+        { "slot": "Armor Enchantment", "name": "Levity", "icon": "enchantment-levity.png", "description": "Enchanted via the Runewright. Converts the medium Manticore armor into Light armor, instantly activating the full Cat School Techniques damage bonuses." },
+        { "slot": "Weapon Enchantment (both swords)", "name": "Severance", "icon": "enchantment-severance.png", "description": "Massively extends the physical reach of both Whirl and Rend." },
+        { "slot": "Remaining Slots (pants, boots, gauntlets)", "name": "Greater Glyph of Mending", "icon": "glyph-greater-mending.png", "description": "HP regeneration, to neutralize toxic health drain." }
+      ],
+      "consumables": {
+        "rotationNote": "Drink your long-lasting decoctions first, then top off your remaining toxicity with short-term combat potions right before engagement.",
+        "decoctions": [
+          { "name": "Ekimmara Decoction", "icon": "decoction-ekimmara.png", "description": "Restores health when dealing damage to enemies. Completely negates toxic health drain." },
+          { "name": "Water Hag Decoction", "icon": "decoction-water-hag.png", "description": "Boosts your raw damage output by 50% as long as your health is full." },
+          { "name": "Arachas Decoction", "icon": "decoction-arachas.png", "description": "Reduces incoming damage based on how light your armor/inventory weight is." },
+          { "name": "Succubus Decoction", "icon": "decoction-succubus.png", "description": "Steadily increases your attack power over the duration of the fight." }
+        ],
+        "potions": [
+          { "name": "Superior Thunderbolt", "icon": "potion-thunderbolt.png", "description": "Boosts your attack power." },
+          { "name": "Superior Tawny Owl", "icon": "potion-tawny-owl.png", "description": "Speeds up Stamina regeneration for continuous Whirl and Rend." },
+          { "name": "Superior Blizzard", "icon": "potion-blizzard.png", "description": "Slows down time when an enemy is killed, allowing for infinite stamina attacks if you maintain 3 Adrenaline points." }
+        ]
+      }
+    },
+    {
+      "slug": "metamorphosis-combat-alchemy",
+      "name": "Metamorphosis Combat-Alchemy \"God\" Build",
+      "role": "Combat / Alchemy hybrid (v4.04)",
+      "iconBase": "assets/images/builds/",
+      "skillTreeImage": "assets/images/Witcher-3-Metamorphosis-build.webp",
+      "mutation": {
+        "name": "Metamorphosis",
+        "icon": "mutation-metamorphosis.png",
+        "description": "Relies on high critical-hit chance to rapidly trigger up to 5 already-brewed decoctions for free (0 Toxicity cost), turning you into a damage-and-sustain machine without ever filling your toxicity bar."
+      },
+      "toxicityStrategy": "Unlike Euphoria, this build doesn't sit near the toxicity threshold — Metamorphosis-triggered decoctions cost 0 Toxicity, so your bar stays clear for standard combat potions instead.",
+      "slotNote": "12 main skill slots and 4 mutation slots, split between the Combat and Alchemy trees. Use 4 Greater Red Mutagens to maximize attack power.",
+      "skillTrees": [
+        {
+          "name": "Combat",
+          "color": "red",
+          "slotCount": 7,
+          "skills": [
+            { "name": "Muscle Memory", "icon": "skill-muscle-memory.png", "description": "Maximum fast attack damage and critical hit chance." },
+            { "name": "Precise Blows", "icon": "skill-precise-blows.png", "description": "Maximum fast attack critical hit chance." },
+            { "name": "Crushing Blows", "icon": "skill-crushing-blows.png", "description": "For heavy armor enemies." },
+            { "name": "Rend", "icon": "skill-rend.png", "description": "Bypasses shields and guarantees high critical chance." },
+            { "name": "Whirl", "icon": "skill-whirl.png", "description": "Mandatory. Your primary mechanism to apply rapid hits, instantly triggering critical effects to activate your decoctions." },
+            { "name": "Razor Focus", "icon": "skill-razor-focus.png", "description": "Instantly gives you an adrenaline point entering combat, and generates them rapidly via Whirl." },
+            { "name": "Sunder Armor (Optional)", "icon": "skill-sunder-armor.png", "description": "Helps shred bosses or heavy monsters quickly." }
+          ]
+        },
+        {
+          "name": "Alchemy",
+          "color": "green",
+          "slotCount": 6,
+          "skills": [
+            { "name": "Acquired Tolerance", "icon": "skill-acquired-tolerance.png", "description": "Nerfed in 4.0, but still required to give you enough toxicity to drink your standard potions." },
+            { "name": "Tissue Transmutation", "icon": "skill-tissue-transmutation.png", "description": "Grants you thousands of extra HP automatically as Metamorphosis forces decoctions to activate." },
+            { "name": "Protective Coating", "icon": "skill-protective-coating.png", "description": "Grants a permanent 15% damage resistance against the monster type matching your applied oil." },
+            { "name": "Synergy", "icon": "skill-synergy.png", "description": "Mandatory. Boosts the effectiveness of your equipped mutagens by 50% — Red Mutagens jump from +10% to +15% attack power each." },
+            { "name": "Killing Spree", "icon": "skill-killing-spree.png", "description": "Increases your critical hit chance by 50% for every enemy killed. Essential for group fights." },
+            { "name": "Hunter Instinct (Optional)", "icon": "skill-hunter-instinct.png", "description": "Grants extra critical damage when adrenaline is full (patch 4.0 corrected this skill so it finally functions as intended)." }
+          ]
+        },
+        {
+          "name": "General",
+          "color": "brown",
+          "slotCount": 1,
+          "skills": [
+            { "name": "Cat School Techniques", "icon": "skill-cat-school-techniques.png", "description": "Increases critical hit damage by 25% and fast attack damage by 5% for each piece of Light Armor equipped." }
+          ]
+        }
+      ],
+      "mutagens": "Use 4 Greater Red Mutagens to maximize your attack power, boosted further by Synergy.",
+      "gear": [
+        { "slot": "Chest Armor", "name": "Grandmaster Ursine Armor (Bear Set)", "icon": "gear-ursine-armor.png", "description": "Offers the highest damage resistance in the game." },
+        { "slot": "Gauntlets", "name": "Grandmaster Ursine Gauntlets", "icon": "gear-ursine-gauntlets.png", "description": "Part of the 3-piece Ursine set bonus (boosts Quen shield duration, chance to auto-recast Quen for free). Swap to Grandmaster Manticore boots/trousers if you want higher base critical stats instead." },
+        { "slot": "Trousers", "name": "Grandmaster Ursine Trousers", "icon": "gear-ursine-trousers.png", "description": "Part of the 3-piece Ursine set bonus (boosts Quen shield duration, chance to auto-recast Quen for free)." },
+        { "slot": "Boots", "name": "Grandmaster Ursine Boots", "icon": "gear-ursine-boots.png", "description": "Part of the 3-piece Ursine set bonus (boosts Quen shield duration, chance to auto-recast Quen for free)." },
+        { "slot": "Silver Sword", "name": "Aerondight", "icon": "gear-aerondight.png", "description": "Increases its damage permanently with every hit; at 10 charges every hit is a guaranteed critical, instantly proc'ing Metamorphosis." },
+        { "slot": "Steel Sword", "name": "Toussaint Knight's Steel Sword", "icon": "gear-toussaint-knights-steel-sword.png", "description": "Crafted version. Features a massive +100% critical hit damage bonus and 15% critical hit chance." }
+      ],
+      "enchantments": [
+        { "slot": "Armor Enchantment", "name": "Levity", "icon": "enchantment-levity.png", "description": "Crucial. Converts the heavy Bear armor into Light Armor, enabling the massive bonuses from Cat School Techniques." },
+        { "slot": "Weapon Enchantment (both swords)", "name": "Severance", "icon": "enchantment-severance.png", "description": "Increases Whirl range by 1.1m and Rend range by 1.9m." },
+        { "slot": "Remaining Armor Slots (choose one)", "name": "Greater Glyph of Mending", "icon": "glyph-greater-mending.png", "description": "HP regeneration." },
+        { "slot": "Remaining Armor Slots (choose one)", "name": "Greater Glyph of Reinforcement", "icon": "glyph-greater-reinforcement.png", "description": "Durability." }
+      ],
+      "consumables": {
+        "rotationNote": "Metamorphosis only pulls from decoctions you've actually crafted — don't craft ones outside this list, or clear out extras if you can. The Open: apply the correct oil, cast Quen. The Trigger: dash in and hold Whirl — near-100% crit chance means the first ~2 seconds of spinning triggers Metamorphosis, flooding you with up to 5 active decoctions (HP pool expands via Tissue Transmutation, damage spikes). The Chug: since those decoctions cost 0 Toxicity, your bar is clear — drink Superior Thunderbolt, Superior Blizzard, and Superior Maribor Forest.",
+        "decoctions": [
+          { "name": "Water Hag Decoction", "icon": "decoction-water-hag.png", "description": "Increases damage by 50% when your HP is at maximum." },
+          { "name": "Ekimmara Decoction", "icon": "decoction-ekimmara.png", "description": "Restores HP whenever you deal damage (constant life-steal)." },
+          { "name": "Arachas Decoction", "icon": "decoction-arachas.png", "description": "Reduces damage taken based on your armor/inventory weight — synergizes heavily with heavy Ursine armor." },
+          { "name": "Ekhidna Decoction", "icon": "decoction-ekhidna.png", "description": "Regenerates HP whenever you perform actions that consume stamina (casting Quen, spinning with Whirl)." },
+          { "name": "Chort / Succubus Decoction", "icon": "decoction-succubus.png", "description": "For stagger immunity, or scaling attack power over time." }
+        ],
+        "potions": [
+          { "name": "Superior Thunderbolt", "icon": "potion-thunderbolt.png", "description": "Boosts your attack power." },
+          { "name": "Superior Blizzard", "icon": "potion-blizzard.png", "description": "Slows time on kills." },
+          { "name": "Superior Maribor Forest", "icon": "potion-maribor-forest.png", "description": "Instant adrenaline." }
+        ]
+      }
+    }
+  ]
+}
