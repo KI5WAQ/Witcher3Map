@@ -162,7 +162,9 @@ body.map-fullscreen #sidebar { display: none; }
   font-size: 13px;
   cursor: pointer;
   padding: 4px 0;
+  list-style: none;
 }
+.legend-root::-webkit-details-marker { display: none; }
 .legend-children {
   margin-left: 20px;
   display: flex;

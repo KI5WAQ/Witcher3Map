@@ -86,6 +86,19 @@ const Storage = (() => {
     write(hiddenTypesKey(mapSlug), Array.from(set));
   }
 
+  // --- Legend group collapsed/expanded state (per map) ---
+  function collapsedGroupsKey(mapSlug) {
+    return `${KEY_PREFIX}:collapsedLegendGroups:${mapSlug}`;
+  }
+
+  function getCollapsedLegendGroups(mapSlug) {
+    return new Set(read(collapsedGroupsKey(mapSlug), []));
+  }
+
+  function setCollapsedLegendGroups(mapSlug, set) {
+    write(collapsedGroupsKey(mapSlug), Array.from(set));
+  }
+
   // --- Grandmaster armor component checklist (game-wide, not per-map) ---
   const GRANDMASTER_KEY = `${KEY_PREFIX}:grandmasterCompleted`;
 
@@ -116,6 +129,8 @@ const Storage = (() => {
     deleteNote,
     getHiddenTypes,
     setHiddenTypes,
+    getCollapsedLegendGroups,
+    setCollapsedLegendGroups,
     getGrandmasterCompleted,
     toggleGrandmasterComponent,
     resetGrandmasterCompleted,

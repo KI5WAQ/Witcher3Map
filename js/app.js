@@ -74,6 +74,7 @@ const state = {
   typesById: new Map(),
   rootTypes: [],
   hiddenTypes: new Set(),
+  collapsedLegendGroups: new Set(),
   searchTerm: "",
   addingNote: false,
   noteMarkers: new Map(), // note id -> leaflet marker
@@ -160,6 +161,7 @@ async function loadMap(mapSlug, { focusMapgenieId } = {}) {
   const mapData = await fetchJson(`data/maps/${mapSlug}.json`);
   state.mapData = mapData;
   state.hiddenTypes = Storage.getHiddenTypes(mapSlug);
+  state.collapsedLegendGroups = Storage.getCollapsedLegendGroups(mapSlug);
   state.searchTerm = "";
   els.searchBox.value = "";
 
@@ -399,6 +401,18 @@ function renderLegend() {
   });
   els.legendTree.querySelectorAll("[data-legend-root]").forEach((cb) => {
     cb.addEventListener("change", onLegendRootToggle);
+    // The checkbox lives inside a <summary>; without this, clicking it would
+    // also toggle the <details> open/closed since click bubbles to summary.
+    cb.addEventListener("click", (e) => e.stopPropagation());
+    cb.indeterminate = cb.hasAttribute("data-indeterminate");
+  });
+  els.legendTree.querySelectorAll("details.legend-group").forEach((details) => {
+    details.addEventListener("toggle", () => {
+      const slug = details.getAttribute("data-legend-group");
+      if (details.open) state.collapsedLegendGroups.delete(slug);
+      else state.collapsedLegendGroups.add(slug);
+      Storage.setCollapsedLegendGroups(state.mapData.mapSlug, state.collapsedLegendGroups);
+    });
   });
 
   els.legendToggleAll.addEventListener("click", onLegendToggleAll);
@@ -408,14 +422,15 @@ function renderLegendRoot(root) {
   const childRows = root.children.map(renderLegendLeaf).join("");
   const allHidden = root.children.every((c) => state.hiddenTypes.has(c.typeSlug));
   const noneHidden = root.children.every((c) => !state.hiddenTypes.has(c.typeSlug));
+  const isOpen = !state.collapsedLegendGroups.has(root.typeSlug);
   return `
-    <div class="legend-group">
-      <label class="legend-root">
+    <details class="legend-group" data-legend-group="${root.typeSlug}" ${isOpen ? "open" : ""}>
+      <summary class="legend-root">
         <input type="checkbox" data-legend-root="${root.typeSlug}" ${noneHidden ? "checked" : ""} ${!noneHidden && !allHidden ? "data-indeterminate" : ""}>
         ${escapeHtml(root.name)}
-      </label>
+      </summary>
       <div class="legend-children">${childRows}</div>
-    </div>
+    </details>
   `;
 }
 
